@@ -1,8 +1,8 @@
 #!/bin/bash
 sudo apt update
 sudo apt upgrade 
-sudo apt install gedit gnome-tweak-tool preload indicator-cpufreq terminator vlc gdebi gimp gimp-gmic bleachbit gparted gnome-disk-utility
-sudo apt install git nodejs npm ruby zsh
+sudo apt install curl gedit gnome-tweak-tool preload indicator-cpufreq terminator vlc gdebi gimp gimp-gmic bleachbit gparted gnome-disk-utility -y
+sudo apt install git nodejs npm ruby zsh -y
 
 
 
@@ -19,7 +19,6 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 # scm_breeze
 git clone git://github.com/scmbreeze/scm_breeze.git ~/.scm_breeze
 ~/.scm_breeze/install.sh
-source ~/.zshrc
 
 # Additional Repos
 
@@ -74,7 +73,7 @@ curl https://raw.githubusercontent.com/jangernert/FeedReader/master/scripts/inst
 
 # Terminus - terminal - not working ATM
 wget https://github.com/Eugeny/terminus/releases/download/v1.0.0-alpha.46/terminus_1.0.0-alpha.46_amd64.deb
-sudo gdebi terminus_1.0.0-alpha.46_amd64.deb
+sudo dpkg -i terminus_1.0.0-alpha.46_amd64.deb
 rm -f terminus_1.0.0-alpha.46_amd64.deb
 
 
@@ -96,3 +95,5 @@ rm -f google-chrome-stable_current_amd64.deb
 # Clean up
 sudo apt-get install -f
 sudo apt-get autoremove
+
+source ~/.zshrc
