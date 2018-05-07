@@ -1,8 +1,8 @@
 #!/bin/bash
 sudo apt update
 sudo apt upgrade 
-sudo apt install curl gedit gnome-tweak-tool preload indicator-cpufreq terminator vlc gdebi gimp gimp-gmic bleachbit gparted gnome-disk-utility -y
-sudo apt install git nodejs npm ruby zsh -y
+sudo apt-get --y install curl gedit gnome-tweak-tool preload indicator-cpufreq terminator vlc gdebi gimp gimp-gmic bleachbit gparted gnome-disk-utility
+sudo apt-get --y install git nodejs npm ruby zsh
 
 
 
@@ -94,6 +94,6 @@ rm -f google-chrome-stable_current_amd64.deb
 
 # Clean up
 sudo apt-get install -f
-sudo apt-get autoremove
+sudo apt-get autoremove --y
 
 source ~/.zshrc
