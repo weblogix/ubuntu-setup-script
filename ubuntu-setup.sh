@@ -10,12 +10,6 @@ sudo apt-get -y install git nodejs npm ruby zsh
 
 sudo ubuntu-drivers autoinstall
 
-
-# Terminal stuff
-
-# Oh-my-zsh
-sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
-
 # scm_breeze
 git clone git://github.com/scmbreeze/scm_breeze.git ~/.scm_breeze
 ~/.scm_breeze/install.sh
@@ -95,5 +89,11 @@ rm -f google-chrome-stable_current_amd64.deb
 # Clean up
 sudo apt-get install -f
 sudo apt-get autoremove --y
+
+
+# Terminal stuff
+
+# Oh-my-zsh
+sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
 source ~/.zshrc
