@@ -1,8 +1,8 @@
 #!/bin/bash
-sudo apt update
-sudo apt upgrade 
-sudo apt-get --y install curl gedit gnome-tweak-tool preload indicator-cpufreq terminator vlc gdebi gimp gimp-gmic bleachbit gparted gnome-disk-utility
-sudo apt-get --y install git nodejs npm ruby zsh
+sudo apt -y update
+sudo apt -y upgrade 
+sudo apt-get -y install curl gedit gnome-tweak-tool preload indicator-cpufreq terminator vlc gdebi gimp gimp-gmic bleachbit gparted gnome-disk-utility
+sudo apt-get -y install git nodejs npm ruby zsh
 
 
 
